@@ -1,0 +1,27 @@
+{
+  "name": "incrementer",
+  "version": "1.0.0",
+  "description": "A simple incrementer app using React, Node and Express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zackcarlson/incrementer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zackcarlson/incrementer/issues"
+  },
+  "homepage": "https://github.com/zackcarlson/incrementer#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "helmet": "^3.14.0",
+    "morgan": "^1.9.1"
+  }
+}
