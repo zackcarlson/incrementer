@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Home from './AuthorizedHome';
+import AuthorizedHome from './AuthorizedHome';
 
 class App extends Component {
   // check if token exists 
