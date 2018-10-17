@@ -26,7 +26,7 @@ app.use(cors());
 app.use(morgan('combined'));
 
 // direct to correct route
-app.use('/', routes);
+app.use('*', routes);
 
 
 // start the server
