@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import AuthorizedHome from './AuthorizedHome';
+import Navbar from './Navbar';
+import Login from './Login';
+import SignUp from './Signup';
 
 class App extends Component {
   // check if token exists 
@@ -13,8 +17,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        APP CONTAINER
-        <AuthorizedHome />
+        <Navbar/>
+        <Switch>
+          <Route exact path='/' component={Login}/>
+          <Route path='/signup' component={SignUp}/>
+          <Route path='/home/:userId' component={AuthorizedHome}/>
+        </Switch> 
       </div>
     );
   }
