@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 module.exports = {
-  entry: './client/src/components/main.js',
+  entry: './client/src/main.js',
   output: {
     path: path.resolve(__dirname, "./client/dist/build/"),
     publicPath: "/",
@@ -35,6 +35,9 @@ module.exports = {
         }]
       }
     ]
+  },
+  devServer: {
+    historyApiFallback: true
   },
   plugins: [
     new HtmlWebpackPlugin({
