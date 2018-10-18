@@ -11,6 +11,7 @@ const webpackConfig = require('../webpack.config.js');
 
 // define the Express app
 const app = express();
+
 app.use(webpackMiddleware(webpack(webpackConfig)));
 
 // enhance your app security with Helmet
@@ -26,7 +27,7 @@ app.use(cors());
 app.use(morgan('combined'));
 
 // direct to correct route
-app.use('*', routes);
+app.use('/', routes);
 
 
 // start the server
