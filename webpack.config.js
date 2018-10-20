@@ -44,5 +44,8 @@ module.exports = {
       template: './client/src/index.html'
     }),
     new LiveReloadPlugin()
-  ]
+  ],
+  externals: {
+    'React': 'React'
+  },
 };
