@@ -59,7 +59,7 @@ export default class AuthorizedHome extends Component {
     return (
       <Container id='count-and-increment-container'>
         <Row>
-        <Col>
+        <Col style={{textAlign: 'center'}}>
           <ButtonGroup bsSize="large" justified >
             <Button>
               Count: {this.state.currCount}
